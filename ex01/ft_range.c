@@ -6,7 +6,7 @@
 /*   By: brian <brian@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/01 01:34:02 by brian             #+#    #+#             */
-/*   Updated: 2024/04/01 02:05:17 by brian            ###   ########.fr       */
+/*   Updated: 2024/04/02 00:23:19 by brian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	*ft_range(int min, int max)
 	int	i;
 
 	i = 0;
-	array = malloc(max - min);
+	array = malloc(sizeof(int) * (max - min));
 	if (min >= max || (min == 0 && max == 0))
 		return (NULL);
 	while (min <= max)
